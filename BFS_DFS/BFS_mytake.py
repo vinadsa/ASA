@@ -1,17 +1,21 @@
 from collections import deque
+
 def bfs(graph, start):
     visited = set()
     queue = deque([start])
     visited.add(start)
-    while queue:
-        vertex = queue.popleft()
-        print(vertex, end=" ")
 
-        for neighbor in graph[vertex]:
-            if neighbor not in visited:
-                visited.add(neighbor)
-                queue.append(neighbor)
+    while queue:
+        expand = queue.popleft()
+        print(expand, end=" ")
+
+        for child in graph[expand]:
+            if child not in visited:
+                visited.add(child)
+                queue.append(child)
     return visited
+
+    
 
 graph = {
     1: [2, 6, 7, 10, 11],
