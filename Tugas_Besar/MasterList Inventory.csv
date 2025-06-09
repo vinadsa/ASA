@@ -1,0 +1,29 @@
+﻿Nama_Item,Berat_Item,Nilai_Item,Kategori_Item,Stackable,Max_Stack_Jika_Stackable
+Stimpak,0.1,75,Aid,TRUE,20
+Super Stimpak,0.1,150,Aid,TRUE,15
+RadAway,0.1,100,Aid,TRUE,10
+Rad-X,0.1,40,Aid,TRUE,15
+Nuka-Cola,1,20,Aid,TRUE,30
+Air Murni,1,20,Aid,TRUE,50
+Tas Dokter,2,125,Aid,TRUE,5
+9mm Pistol,1.5,150,Weapon,FALSE,1
+Service Rifle,7,800,Weapon,FALSE,1
+Sniper Rifle,8,1500,Weapon,FALSE,1
+Pisau Lempar,0.5,20,Weapon,TRUE,10
+Frag Grenade,0.5,150,Weapon,TRUE,15
+Fat Man,30,4000,Weapon,FALSE,1
+Peluru 9mm,0.014,1,Ammo,TRUE,500
+Peluru 5.56mm,0.02,4,Ammo,TRUE,500
+Peluru .308,0.03,8,Ammo,TRUE,200
+Mini Nuke,6,500,Ammo,TRUE,10
+Leather Armor,15,120,Armor,FALSE,1
+Combat Armor,25,800,Armor,FALSE,1
+Metal Armor,30,350,Armor,FALSE,1
+T-45d Power Armor,45,1500,Armor,FALSE,1
+Scrap Metal,2,8,Misc,TRUE,100
+Sensor Module,1,200,Misc,TRUE,20
+Uang Pra-Perang,0,10,Misc,TRUE,1000
+Bobby Pin,0,1,Misc,TRUE,100
+Broc Flower,0.1,5,Misc,TRUE,30
+Karton Rokok,0.5,50,Misc,TRUE,20
+Botol Nuka-Cola Kosong,0.5,1,Misc,TRUE,100
