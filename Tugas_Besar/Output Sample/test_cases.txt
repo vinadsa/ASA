@@ -1,0 +1,57 @@
+test_cases = [
+        {
+            "name": "Test Case 1: Terkontrol",
+            "capacity": 60,
+            "inventory": [
+                {'Nama_Item': 'Fat Man', 'Berat_Satuan': 30, 'Nilai_Satuan': 4000, 'Jumlah': 1, 'Stackable': False},
+                {'Nama_Item': 'Leather Armor', 'Berat_Satuan': 15, 'Nilai_Satuan': 120, 'Jumlah': 2, 'Stackable': False},
+                {'Nama_Item': 'Stimpak', 'Berat_Satuan': 0.1, 'Nilai_Satuan': 75, 'Jumlah': 10, 'Stackable': True},
+            ]
+        },
+        {
+            "name": "Test Case 2: Cukup Kompleks",
+            "capacity": 80,
+            "inventory": [
+                {'Nama_Item': 'Service Rifle', 'Berat_Satuan': 7, 'Nilai_Satuan': 800, 'Jumlah': 2, 'Stackable': False},
+                {'Nama_Item': 'Combat Armor', 'Berat_Satuan': 25, 'Nilai_Satuan': 800, 'Jumlah': 1, 'Stackable': False},
+                {'Nama_Item': 'Mini Nuke', 'Berat_Satuan': 6, 'Nilai_Satuan': 500, 'Jumlah': 5, 'Stackable': True},
+                {'Nama_Item': 'Scrap Metal', 'Berat_Satuan': 2, 'Nilai_Satuan': 8, 'Jumlah': 10, 'Stackable': True},
+            ]
+        },
+        {
+            "name": "Test Case 3: Kapasitas Sangat Terbatas",
+            "capacity": 40,
+            "inventory": [
+                {'Nama_Item': 'Fat Man', 'Berat_Satuan': 30, 'Nilai_Satuan': 4000, 'Jumlah': 1, 'Stackable': False},
+                {'Nama_Item': 'Sniper Rifle', 'Berat_Satuan': 8, 'Nilai_Satuan': 1500, 'Jumlah': 1, 'Stackable': False},
+                {'Nama_Item': 'Combat Armor', 'Berat_Satuan': 25, 'Nilai_Satuan': 800, 'Jumlah': 1, 'Stackable': False},
+            ]
+        },
+        {
+            "name": "Test Case 4: Banyak Item 'Sampah'",
+            "capacity": 80,
+            "inventory": [
+                {'Nama_Item': 'Scrap Metal', 'Berat_Satuan': 2, 'Nilai_Satuan': 8, 'Jumlah': 25, 'Stackable': True},
+                {'Nama_Item': 'Botol Nuka-Cola Kosong', 'Berat_Satuan': 0.5, 'Nilai_Satuan': 1, 'Jumlah': 30, 'Stackable': True},
+                {'Nama_Item': 'Service Rifle', 'Berat_Satuan': 7, 'Nilai_Satuan': 800, 'Jumlah': 1, 'Stackable': False},
+                {'Nama_Item': '9mm Pistol', 'Berat_Satuan': 1.5, 'Nilai_Satuan': 150, 'Jumlah': 1, 'Stackable': False}
+            ]
+        },
+        {
+            "name": "Test Case 5: Dilema Berat vs. Nilai",
+            "capacity": 100,
+            "inventory": [
+                {'Nama_Item': 'T-45d Power Armor', 'Berat_Satuan': 45, 'Nilai_Satuan': 1500, 'Jumlah': 1, 'Stackable': False},
+                {'Nama_Item': 'Service Rifle', 'Berat_Satuan': 7, 'Nilai_Satuan': 800, 'Jumlah': 4, 'Stackable': False},
+                {'Nama_Item': 'Mini Nuke', 'Berat_Satuan': 6, 'Nilai_Satuan': 500, 'Jumlah': 5, 'Stackable': True},
+            ]
+        },
+        {
+            "name": "Test Case 6: Kapasitas Cukup (Trade-off Optimal)",
+            "capacity": 80,
+            "inventory": [
+                {'Nama_Item': 'Service Rifle', 'Berat_Satuan': 7, 'Nilai_Satuan': 800, 'Jumlah': 2, 'Stackable': False},
+                {'Nama_Item': 'Combat Armor', 'Berat_Satuan': 25, 'Nilai_Satuan': 800, 'Jumlah': 1, 'Stackable': False},
+            ]
+        }
+    ]

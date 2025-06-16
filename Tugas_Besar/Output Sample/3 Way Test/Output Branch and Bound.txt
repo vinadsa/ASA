@@ -1,0 +1,192 @@
+---------------MENJALANKAN TESTCASES UTAMA---------------
+
+==================== Test Case 1: Normal ====================
+Kapasitas Bawa: 60 lbs
+Jumlah jenis item unik: 3
+
+Memulai Branch and Bound...
+DEBUG BnB: Inisialisasi dengan hasil Greedy - Gold: 1, Dropped Value: 4870, Profit: 5135
+
+--- Hasil Optimasi Branch and Bound ---
+Waktu Eksekusi: 0.0001 detik
+Jumlah Node Dikunjungi: 40
+Emas Batangan Diambil: 1
+Item yang Dikorbankan (Optimal):
+- Fat Man (x1)
+- Leather Armor (x1)
+Total Nilai Item Dikorbankan: 4120
+PROFIT BERSIH (Optimal): 5885 Caps
+====================================================
+
+==================== Test Case 2: Kompleks ====================
+Kapasitas Bawa: 80 lbs
+Jumlah jenis item unik: 4
+
+Memulai Branch and Bound...
+DEBUG BnB: Inisialisasi dengan hasil Greedy - Gold: 2, Dropped Value: 4180, Profit: 15830
+
+--- Hasil Optimasi Branch and Bound ---
+Waktu Eksekusi: 0.0000 detik
+Jumlah Node Dikunjungi: 33
+Emas Batangan Diambil: 2
+Item yang Dikorbankan (Optimal):
+- Service Rifle (x1)
+- Mini Nuke (x5)
+- Combat Armor (x1)
+- Scrap Metal (x9)
+Total Nilai Item Dikorbankan: 4172
+PROFIT BERSIH (Optimal): 15838 Caps
+====================================================
+
+==================== Test Case 3: Kapasitas Sangat Terbatas ====================
+Kapasitas Bawa: 40 lbs
+Jumlah jenis item unik: 3
+
+Memulai Branch and Bound...
+DEBUG BnB: Inisialisasi dengan hasil Greedy - Gold: 1, Dropped Value: 6300, Profit: 3705
+
+--- Hasil Optimasi Branch and Bound ---
+Waktu Eksekusi: 0.0000 detik
+Jumlah Node Dikunjungi: 7
+Emas Batangan Diambil: 1
+Item yang Dikorbankan (Optimal):
+- Combat Armor (x1)
+- Fat Man (x1)
+- Sniper Rifle (x1)
+Total Nilai Item Dikorbankan: 6300
+PROFIT BERSIH (Optimal): 3705 Caps
+====================================================
+
+==================== Test Case 4: Banyak Item 'Sampah' ====================
+Kapasitas Bawa: 80 lbs
+Jumlah jenis item unik: 4
+
+Memulai Branch and Bound...
+DEBUG BnB: Inisialisasi dengan hasil Greedy - Gold: 2, Dropped Value: 1180, Profit: 18830
+
+--- Hasil Optimasi Branch and Bound ---
+Waktu Eksekusi: 0.0001 detik
+Jumlah Node Dikunjungi: 88
+Emas Batangan Diambil: 2
+Item yang Dikorbankan (Optimal):
+- Scrap Metal (x25)
+- Botol Nuka-Cola Kosong (x27)
+Total Nilai Item Dikorbankan: 227
+PROFIT BERSIH (Optimal): 19783 Caps
+====================================================
+
+==================== Test Case 5: Dilema Berat vs. Nilai ====================
+Kapasitas Bawa: 100 lbs
+Jumlah jenis item unik: 3
+
+Memulai Branch and Bound...
+DEBUG BnB: Inisialisasi dengan hasil Greedy - Gold: 2, Dropped Value: 4800, Profit: 15210
+
+--- Hasil Optimasi Branch and Bound ---
+Waktu Eksekusi: 0.0000 detik
+Jumlah Node Dikunjungi: 54
+Emas Batangan Diambil: 2
+Item yang Dikorbankan (Optimal):
+- Mini Nuke (x5)
+- T-45d Power Armor (x1)
+Total Nilai Item Dikorbankan: 4000
+PROFIT BERSIH (Optimal): 16010 Caps
+====================================================
+
+==================== Test Case 6: Kapasitas Cukup (Trade-off Optimal) ====================
+Kapasitas Bawa: 80 lbs
+Jumlah jenis item unik: 2
+
+Memulai Branch and Bound...
+DEBUG BnB: Inisialisasi dengan hasil Greedy - Gold: 2, Dropped Value: 1600, Profit: 18410
+
+--- Hasil Optimasi Branch and Bound ---
+Waktu Eksekusi: 0.0000 detik
+Jumlah Node Dikunjungi: 6
+Emas Batangan Diambil: 2
+Item yang Dikorbankan (Optimal):
+- Combat Armor (x1)
+- Service Rifle (x1)
+Total Nilai Item Dikorbankan: 1600
+PROFIT BERSIH (Optimal): 18410 Caps
+====================================================
+
+==================== Test Case 7: Full Inventory dari Generator(NO. 1) ====================
+Kapasitas Bawa: 180 lbs
+Jumlah jenis item unik: 11
+
+Memulai Branch and Bound...
+DEBUG BnB: Inisialisasi dengan hasil Greedy - Gold: 5, Dropped Value: 8713, Profit: 41312
+
+--- Hasil Optimasi Branch and Bound ---
+Waktu Eksekusi: 6.0689 detik
+Jumlah Node Dikunjungi: 7893548
+Emas Batangan Diambil: 5
+Item yang Dikorbankan (Optimal):
+- Karton Rokok (x15)
+- Mini Nuke (x6)
+- Tas Dokter (x5)
+- Pisau Lempar (x1)
+- Combat Armor (x1)
+- Air Murni (x46)
+- Metal Armor (x1)
+- Botol Nuka-Cola Kosong (x18)
+Total Nilai Item Dikorbankan: 6483
+PROFIT BERSIH (Optimal): 43542 Caps
+====================================================
+
+==================== Test Case 8: Full Inventory dari Generator(NO. 2) ====================
+Kapasitas Bawa: 220 lbs
+Jumlah jenis item unik: 9
+
+Memulai Branch and Bound...
+DEBUG BnB: Inisialisasi dengan hasil Greedy - Gold: 6, Dropped Value: 6587, Profit: 53443
+
+--- Hasil Optimasi Branch and Bound ---
+Waktu Eksekusi: 1.5944 detik
+Jumlah Node Dikunjungi: 2321674
+Emas Batangan Diambil: 6
+Item yang Dikorbankan (Optimal):
+- Fat Man (x1)
+- Tas Dokter (x5)
+- Broc Flower (x13)
+- Pisau Lempar (x5)
+- Nuka-Cola (x1)
+- Air Murni (x19)
+- Scrap Metal (x59)
+Total Nilai Item Dikorbankan: 5662
+PROFIT BERSIH (Optimal): 54368 Caps
+====================================================
+
+==================== Test Case 9: Full Inventory dari Generator(NO. 3) ====================
+Kapasitas Bawa: 190 lbs
+Jumlah jenis item unik: 11
+
+Memulai Branch and Bound...
+DEBUG BnB: Inisialisasi dengan hasil Greedy - Gold: 5, Dropped Value: 12301, Profit: 37724
+
+--- Hasil Optimasi Branch and Bound ---
+Waktu Eksekusi: 0.9172 detik
+Jumlah Node Dikunjungi: 1068768
+Emas Batangan Diambil: 5
+Item yang Dikorbankan (Optimal):
+- Sensor Module (x10)
+- Fat Man (x1)
+- 9mm Pistol (x1)
+- Mini Nuke (x2)
+- Nuka-Cola (x10)
+- Metal Armor (x1)
+- Scrap Metal (x27)
+- Botol Nuka-Cola Kosong (x23)
+Total Nilai Item Dikorbankan: 7939
+PROFIT BERSIH (Optimal): 42086 Caps
+====================================================
+---------------MENJALANKAN HARD TESTCASES---------------
+
+==================== HARD - Inventory 1 ====================
+Error: State Space terlalu besar
+=======================================================
+
+==================== HARD - Inventory 2 ====================
+Error: State Space terlalu besar
+=======================================================

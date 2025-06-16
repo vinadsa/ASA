@@ -40,38 +40,29 @@ def generate_random_inventory(master_list_path="./MasterList Inventory.csv",
         print(f"Error saat membaca CSV: {e}")
         return None, None, None
 
-    # 1. Randomize Strength (STR) dan hitung Kapasitas Bawa Aktual
+    # 1. Randomize Strength (STR) dan hitung Kapasitas
     strength_value = random.randint(1, 10)
     actual_carry_capacity = base_carry_weight + (strength_value * 10)
 
-    # 2. Tentukan target berat inventaris awal
+    # 2. menentukan target berat inventaris awal
     target_inventory_fill_percentage = random.uniform(target_carry_capacity_percentage_min,
                                                      target_carry_capacity_percentage_max)
     target_inventory_weight = actual_carry_capacity * target_inventory_fill_percentage
 
     player_inventory = []
     current_inventory_weight = 0
-    # Buat salinan master list agar bisa di-pop untuk item non-stackable
     available_items_df = master_df.copy()
 
     # 3. Proses Pemilihan Item
-    # Kita akan mencoba mengisi inventaris, memberi prioritas agar tidak langsung melebihi kapasitas
-    # dan mencoba mendapatkan variasi item.
-    # Batasi iterasi untuk menghindari infinite loop jika tidak ada item yang muat
-    max_attempts_to_add_item = len(master_df) * 5  # Misalnya, 5 kali jumlah item unik
+    max_attempts_to_add_item = len(master_df) * 5
 
     for _ in range(max_attempts_to_add_item):
         if current_inventory_weight >= target_inventory_weight:
-            break # Target berat sudah tercapai atau terlewati sedikit
+            break
 
         if available_items_df.empty:
-            break # Tidak ada item lagi yang bisa dipilih
+            break
 
-        # Pilih item secara acak dari item yang masih tersedia
-        # Memberi bobot sedikit lebih pada item yang lebih ringan agar lebih mungkin masuk
-        # Ini adalah heuristik sederhana, bisa disesuaikan atau dihilangkan
-        # Untuk kesederhanaan, kita tidak pakai bobot dulu agar lebih random
-        # random_item_series = available_items_df.sample(n=1, weights=1/(available_items_df['Berat_Item']+0.01)).iloc[0]
         random_item_series = available_items_df.sample(n=1).iloc[0]
 
         item_name = random_item_series['Nama_Item']
@@ -83,19 +74,15 @@ def generate_random_inventory(master_list_path="./MasterList Inventory.csv",
 
         num_to_add = 1
         if is_stackable:
-            # Jika stackable, random jumlahnya
-            # Pastikan max_stack adalah angka, jika tidak, default ke 1
             try:
                 max_s = int(max_stack) if not pd.isna(max_stack) else 1
-                num_to_add = random.randint(1, max(1, max_s)) # max(1, max_s) untuk menghindari error jika max_s < 1
+                num_to_add = random.randint(1, max(1, max_s))
             except ValueError:
-                num_to_add = 1 # Default jika konversi gagal
+                num_to_add = 1
 
         weight_of_items_to_add = item_weight * num_to_add
 
-        # Cek apakah item bisa ditambahkan tanpa melebihi kapasitas total
         if current_inventory_weight + weight_of_items_to_add <= actual_carry_capacity:
-            # Tambahkan item ke inventaris pemain
             existing_item_index = -1
             if is_stackable:
                 for i, inv_item in enumerate(player_inventory):
@@ -104,13 +91,10 @@ def generate_random_inventory(master_list_path="./MasterList Inventory.csv",
                         break
             
             if is_stackable and existing_item_index != -1:
-                # Item stackable sudah ada, tambahkan jumlahnya
-                # Pastikan tidak melebihi max_stack jika ada logika itu (di sini kita asumsikan bisa melebihi total max_stack per item)
                 player_inventory[existing_item_index]['Jumlah'] += num_to_add
                 player_inventory[existing_item_index]['Total_Berat_Item'] += weight_of_items_to_add
                 player_inventory[existing_item_index]['Total_Nilai_Item'] += item_value * num_to_add
             else:
-                # Item baru atau item non-stackable
                 player_inventory.append({
                     'Nama_Item': item_name,
                     'Jumlah': num_to_add,
@@ -124,24 +108,19 @@ def generate_random_inventory(master_list_path="./MasterList Inventory.csv",
 
             current_inventory_weight += weight_of_items_to_add
 
-            # Jika item tidak stackable, hapus dari daftar yang bisa dipilih lagi
             if not is_stackable:
                 available_items_df = available_items_df[available_items_df['Nama_Item'] != item_name]
         
         elif not available_items_df[available_items_df['Berat_Item'] <= (actual_carry_capacity - current_inventory_weight)].empty:
-            # Jika item yang dipilih terlalu berat, tapi masih ada item lain yang mungkin muat, coba lagi
             continue
         else:
-            # Jika item yang dipilih terlalu berat dan tidak ada item lain yang lebih ringan yang muat
             break
 
     
     return player_inventory, actual_carry_capacity, strength_value
 
-# --- Contoh Penggunaan ---
 if __name__ == "__main__":
-    # Pastikan file "MasterList Inventory.csv" ada di direktori yang sama
-    # atau berikan path yang benar.
+    # HARUS PUNYA MasterList Inventory.csv
     generated_inventory, capacity, strength = generate_random_inventory()
 
     if generated_inventory:
@@ -165,7 +144,6 @@ if __name__ == "__main__":
         print(f"Total Nilai Inventaris: {total_nilai_inv} Caps")
         print(f"Persentase Kapasitas Terisi: {(total_berat_inv / capacity) * 100:.2f}%")
 
-        # Detail Emas Batangan
         emas_batangan_berat = 35
         emas_batangan_nilai = 10005
         print(f"\nInfo Emas Batangan Sierra Madre:")

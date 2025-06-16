@@ -1,0 +1,11 @@
+﻿Test Case,Algoritma,Profit Ditemukan,Waktu Eksekusi (s),Keterangan
+HARD - Inventory 1,Greedy,40832,0.001,"Solusi cepat, tetapi sub-optimal."
+HARD - Inventory 1,Randomized Sampling (1k iterasi),40685,0.177,"Sedikit lebih buruk dari Greedy, kurang beruntung."
+HARD - Inventory 1,Randomized Sampling (10k iterasi),45907,2.275,Menemukan solusi yang jauh lebih baik.
+HARD - Inventory 1,Randomized Sampling (100k iterasi),45907,15.841,"Mengkonfirmasi solusi 10k, tidak ada perbaikan."
+HARD - Inventory 1,Branch & Bound,Gagal,>600,State space terlalu besar untuk dieksplorasi.
+HARD - Inventory 2,Greedy,60400,0.001,"Solusi cepat, tetapi sub-optimal."
+HARD - Inventory 2,Randomized Sampling (1k iterasi),56234,0.448,"Cukup jauh dari solusi terbaik, kurang beruntung."
+HARD - Inventory 2,Randomized Sampling (10k iterasi),62231,3.521,Menemukan solusi terbaik yang diketahui.
+HARD - Inventory 2,Randomized Sampling (100k iterasi),62231,35.616,"Mengkonfirmasi solusi 10k, tidak ada perbaikan."
+HARD - Inventory 2,Branch & Bound,Gagal,>600,State space terlalu besar untuk dieksplorasi.

@@ -1,0 +1,6 @@
+﻿Algoritma,Waktu Rata-rata (TC Normal 1-9) (s),Waktu Rata-rata (TC Sulit 10-11) (s)
+Greedy,<0.001,0.001
+Randomized Sampling (1k iterasi),0.029,0.313
+Randomized Sampling (10k iterasi),0.202,2.898
+Randomized Sampling (100k iterasi),1.926,25.729
+Branch & Bound,0.953,>600 (Gagal)

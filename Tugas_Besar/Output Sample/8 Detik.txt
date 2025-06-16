@@ -1,0 +1,40 @@
+--- SKENARIO 2: Menjalankan dengan Inventaris Acak dari Generator ---
+Menghasilkan inventaris acak...
+--- Inventaris Awal (STR: 3, Kapasitas: 180 lbs) ---
+- Karton Rokok (x21), Berat: 10.50, Nilai: 1050
+- Botol Nuka-Cola Kosong (x18), Berat: 9.00, Nilai: 18
+- Rad-X (x7), Berat: 0.70, Nilai: 280
+- Metal Armor (x1), Berat: 30.00, Nilai: 350
+- Mini Nuke (x6), Berat: 36.00, Nilai: 3000
+- Bobby Pin (x91), Berat: 0.00, Nilai: 91
+- Combat Armor (x1), Berat: 25.00, Nilai: 800
+- Pisau Lempar (x1), Berat: 0.50, Nilai: 20
+- Super Stimpak (x11), Berat: 1.10, Nilai: 1650
+- Tas Dokter (x5), Berat: 10.00, Nilai: 625
+- Air Murni (x46), Berat: 46.00, Nilai: 920
+Total Berat Awal: 168.80 lbs, Total Nilai Awal: 8804 Caps
+--------------------------------------------------
+
+==================== Test Case Acak dari Generator ====================
+Kapasitas Bawa: 180 lbs
+Jumlah jenis item unik: 11
+
+Memulai Branch and Bound...
+DEBUG BnB: Inisialisasi dengan hasil Greedy - Gold: 5, Dropped Value: 8713, Profit: 41312
+
+--- Hasil Optimasi Branch and Bound ---
+Waktu Eksekusi: 8.0491 detik
+Jumlah Node Dikunjungi: 7893548
+Emas Batangan Diambil: 5
+Item yang Dikorbankan (Optimal):
+- Karton Rokok (x15)
+- Mini Nuke (x6)
+- Tas Dokter (x5)
+- Pisau Lempar (x1)
+- Combat Armor (x1)
+- Air Murni (x46)
+- Metal Armor (x1)
+- Botol Nuka-Cola Kosong (x18)
+Total Nilai Item Dikorbankan: 6483
+PROFIT BERSIH (Optimal): 43542 Caps
+====================================================

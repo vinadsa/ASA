@@ -1,0 +1,199 @@
+---------------MENJALANKAN TESTCASES UTAMA---------------
+
+==================== Test Case 1: Normal (Iterasi: 1000) ====================
+Kapasitas: 60 lbs, Jumlah jenis item: 3
+
+Memulai Randomized Sampling...
+
+--- Hasil Optimasi Randomized Sampling ---
+Waktu Eksekusi: 0.0057 detik
+Jumlah Iterasi Dilakukan: 1000
+Emas Batangan Diambil: 1
+Item yang Dikorbankan (Solusi Terbaik Ditemukan):
+- Leather Armor (x2)
+- Fat Man (x1)
+Total Nilai Item Dikorbankan: 4240
+PROFIT BERSIH TERBAIK: 5765 Caps
+================================================================
+
+==================== Test Case 2: Kompleks (Iterasi: 1000) ====================
+Kapasitas: 80 lbs, Jumlah jenis item: 4
+
+Memulai Randomized Sampling...
+
+--- Hasil Optimasi Randomized Sampling ---
+Waktu Eksekusi: 0.0110 detik
+Jumlah Iterasi Dilakukan: 1000
+Emas Batangan Diambil: 2
+Item yang Dikorbankan (Solusi Terbaik Ditemukan):
+- Scrap Metal (x10)
+- Combat Armor (x1)
+- Mini Nuke (x5)
+- Service Rifle (x1)
+Total Nilai Item Dikorbankan: 4180
+PROFIT BERSIH TERBAIK: 15830 Caps
+================================================================
+
+==================== Test Case 3: Kapasitas Sangat Terbatas (Iterasi: 1000) ====================
+Kapasitas: 40 lbs, Jumlah jenis item: 3
+
+Memulai Randomized Sampling...
+
+--- Hasil Optimasi Randomized Sampling ---
+Waktu Eksekusi: 0.0032 detik
+Jumlah Iterasi Dilakukan: 1000
+Emas Batangan Diambil: 1
+Item yang Dikorbankan (Solusi Terbaik Ditemukan):
+- Combat Armor (x1)
+- Fat Man (x1)
+- Sniper Rifle (x1)
+Total Nilai Item Dikorbankan: 6300
+PROFIT BERSIH TERBAIK: 3705 Caps
+================================================================
+
+==================== Test Case 4: Banyak Item 'Sampah' (Iterasi: 1000) ====================
+Kapasitas: 80 lbs, Jumlah jenis item: 4
+
+Memulai Randomized Sampling...
+
+--- Hasil Optimasi Randomized Sampling ---
+Waktu Eksekusi: 0.0210 detik
+Jumlah Iterasi Dilakukan: 1000
+Emas Batangan Diambil: 2
+Item yang Dikorbankan (Solusi Terbaik Ditemukan):
+- Botol Nuka-Cola Kosong (x30)
+- Scrap Metal (x25)
+Total Nilai Item Dikorbankan: 230
+PROFIT BERSIH TERBAIK: 19780 Caps
+================================================================
+
+==================== Test Case 5: Dilema Berat vs. Nilai (Iterasi: 1000) ====================
+Kapasitas: 100 lbs, Jumlah jenis item: 3
+
+Memulai Randomized Sampling...
+
+--- Hasil Optimasi Randomized Sampling ---
+Waktu Eksekusi: 0.0057 detik
+Jumlah Iterasi Dilakukan: 1000
+Emas Batangan Diambil: 2
+Item yang Dikorbankan (Solusi Terbaik Ditemukan):
+- T-45d Power Armor (x1)
+- Mini Nuke (x5)
+Total Nilai Item Dikorbankan: 4000
+PROFIT BERSIH TERBAIK: 16010 Caps
+================================================================
+
+==================== Test Case 6: Kapasitas Cukup (Trade-off Optimal) (Iterasi: 1000) ====================
+Kapasitas: 80 lbs, Jumlah jenis item: 2
+
+Memulai Randomized Sampling...
+
+--- Hasil Optimasi Randomized Sampling ---
+Waktu Eksekusi: 0.0029 detik
+Jumlah Iterasi Dilakukan: 1000
+Emas Batangan Diambil: 2
+Item yang Dikorbankan (Solusi Terbaik Ditemukan):
+- Combat Armor (x1)
+- Service Rifle (x1)
+Total Nilai Item Dikorbankan: 1600
+PROFIT BERSIH TERBAIK: 18410 Caps
+================================================================
+
+==================== Test Case 7: Full Inventory dari Generator(NO. 1) (Iterasi: 1000) ====================
+Kapasitas: 180 lbs, Jumlah jenis item: 11
+
+Memulai Randomized Sampling...
+
+--- Hasil Optimasi Randomized Sampling ---
+Waktu Eksekusi: 0.0707 detik
+Jumlah Iterasi Dilakukan: 1000
+Emas Batangan Diambil: 4
+Item yang Dikorbankan (Solusi Terbaik Ditemukan):
+- Metal Armor (x1)
+- Air Murni (x46)
+- Combat Armor (x1)
+- Mini Nuke (x5)
+Total Nilai Item Dikorbankan: 4570
+PROFIT BERSIH TERBAIK: 35450 Caps
+================================================================
+
+==================== Test Case 8: Full Inventory dari Generator(NO. 2) (Iterasi: 1000) ====================
+Kapasitas: 220 lbs, Jumlah jenis item: 9
+
+Memulai Randomized Sampling...
+
+--- Hasil Optimasi Randomized Sampling ---
+Waktu Eksekusi: 0.0930 detik
+Jumlah Iterasi Dilakukan: 1000
+Emas Batangan Diambil: 6
+Item yang Dikorbankan (Solusi Terbaik Ditemukan):
+- Scrap Metal (x59)
+- Nuka-Cola (x1)
+- Air Murni (x19)
+- Pisau Lempar (x5)
+- Broc Flower (x28)
+- Tas Dokter (x5)
+- Karton Rokok (x14)
+- Fat Man (x1)
+Total Nilai Item Dikorbankan: 6437
+PROFIT BERSIH TERBAIK: 53593 Caps
+================================================================
+
+==================== Test Case 9: Full Inventory dari Generator(NO. 3) (Iterasi: 1000) ====================
+Kapasitas: 190 lbs, Jumlah jenis item: 11
+
+Memulai Randomized Sampling...
+
+--- Hasil Optimasi Randomized Sampling ---
+Waktu Eksekusi: 0.0500 detik
+Jumlah Iterasi Dilakukan: 1000
+Emas Batangan Diambil: 5
+Item yang Dikorbankan (Solusi Terbaik Ditemukan):
+- Botol Nuka-Cola Kosong (x23)
+- Scrap Metal (x27)
+- Metal Armor (x1)
+- Nuka-Cola (x10)
+- Fat Man (x1)
+- Sensor Module (x23)
+- Super Stimpak (x1)
+Total Nilai Item Dikorbankan: 9539
+PROFIT BERSIH TERBAIK: 40486 Caps
+================================================================
+---------------MENJALANKAN HARD TESTCASES---------------
+
+==================== HARD - Inventory 1 (Iterasi: 1000) ====================
+Kapasitas: 220 lbs, Jumlah jenis item: 12
+
+Memulai Randomized Sampling...
+
+--- Hasil Optimasi Randomized Sampling ---
+Waktu Eksekusi: 0.1766 detik
+Jumlah Iterasi Dilakukan: 1000
+Emas Batangan Diambil: 5
+Item yang Dikorbankan (Solusi Terbaik Ditemukan):
+- Metal Armor (x1)
+- Air Murni (x37)
+- Mini Nuke (x16)
+- Karton Rokok (x5)
+Total Nilai Item Dikorbankan: 9340
+PROFIT BERSIH TERBAIK: 40685 Caps
+================================================================
+
+==================== HARD - Inventory 2 (Iterasi: 1000) ====================
+Kapasitas: 250 lbs, Jumlah jenis item: 11
+
+Memulai Randomized Sampling...
+
+--- Hasil Optimasi Randomized Sampling ---
+Waktu Eksekusi: 0.4483 detik
+Jumlah Iterasi Dilakukan: 1000
+Emas Batangan Diambil: 6
+Item yang Dikorbankan (Solusi Terbaik Ditemukan):
+- Scrap Metal (x61)
+- Nuka-Cola (x21)
+- T-45d Power Armor (x1)
+- Karton Rokok (x18)
+- Peluru .308 (x61)
+Total Nilai Item Dikorbankan: 3796
+PROFIT BERSIH TERBAIK: 56234 Caps
+================================================================

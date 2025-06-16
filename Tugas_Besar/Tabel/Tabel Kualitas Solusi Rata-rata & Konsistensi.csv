@@ -1,0 +1,5 @@
+﻿Algoritma,Kualitas Rata-rata (% Optimal),Kualitas Minimum (% Optimal),Jumlah Solusi Optimal Ditemukan (dari 9)
+Greedy,95.57,87.2,2
+Randomized Sampling (1k iterasi),97.11,81.5,3
+Randomized Sampling (10k iterasi),99.73,97.9,5
+Randomized Sampling (100k iterasi),99.73,97.9,5
